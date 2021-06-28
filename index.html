@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beatles</title>
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="webapp">
+        <header class="header">
+            <nav class="navigation">
+                <ul class="menu-page">
+                    <li class="menu-page__item"><a href="">Home</a></li>
+                    <li class="menu-page__item"><a href="">Band</a></li>
+                    <li class="menu-page__item"><a href="">Tour</a></li>
+                    <li class="menu-page__item"><a href="">Contact</a></li>
+                    <li class="menu-page__item menu-page__select">
+                        <span class="menu-page-select__text">More <i class="fas fa-sort-down"></i></span>
+                        <div class="menu-page-select__list">
+                            <a href="" value="Merchandise">Merchandise</a>
+                            <a href="" value="Extras">Extras</a>
+                            <a href="" value="Media">Media</a>
+                        </div>
+                    </li>
+                    <li class="menu-page__item menu-page__search">
+                      <i class="fas fa-search"></i>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="slide">
+                <div id="slide__content" class="slide__content">
+                    <div class="slide-item">
+                        <img class="slide-item__img" src="public/img/The-Beatles-Computer-Wallpaper 1.jpg" alt="" onclick = "switchSlide(1)">
+                        <div class="slide-item__content">
+                            <h5 class="title">The perfect moments</h5>
+                            <p class="description description--white">We have sang together</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img class="slide-item__img" src="public/img/The-Beatles-Computer-Wallpaper 2.jpg" alt="" onclick = "switchSlide(1)">
+                        <div class="slide-item__content">
+                            <h5 class="title">The leads</h5>
+                            <p class="description description--white">The most influential band of all time</p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img class="slide-item__img" src="public/img/The-Beatles-Computer-Wallpaper 3.jpg" alt="" onclick = "switchSlide(1)">
+                        <div class="slide-item__content">
+                            <h5 class="title">The records</h5>
+                            <p class="description description--white">The best-selling music act of all time</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide__manager">
+                    <button class="slide-manager__pre" onclick="switchSlide(-1);">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slide-manager__next" onclick="switchSlide(1);">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="bg-white">
+                <div class="content-info">
+                    <h3 class="title title--large">The Beatles</h3>
+                    <p class="description">We love music</p>
+                    <p class="text">
+                        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <ul class="content__list">
+                        <li class="content-list__item">
+                            <h5 class="title title--small">John Lennon</h5>
+                            <img src="public/img/John Lennon.jpg" alt="John Lennon's image" class="content-list__img">
+                        </li>
+                        <li class="content-list__item">
+                            <h5 class="title title--small">Paul Mccartney</h5>
+                            <img src="public/img/Paul Mccartney.jpg" alt="Paul Mccartney's image" class="content-list__img">
+                        </li>
+                        <li class="content-list__item">
+                            <h5 class="title title--small">George Harrison</h5>
+                            <img src="public/img/George Harrison.jpg" alt="George Harrison's image" class="content-list__img">
+                        </li>
+                        <li class="content-list__item">
+                            <h5 class="title title--small">Ringo Starr</h5>
+                            <img src="public/img/Ringo Starr.jpg" alt="Ringo Starr's image" class="content-list__img">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-black">
+                <div class="content-product content-product--dvd">
+                    <h3 class="title title--large">DVD</h3>
+                    <p class="description">Buy The Beatles's DVD</p>
+                    <ul class="content__list content__list--overflow-x">
+                        <li class="content-list__item">
+                            <h5 class="title title--small">Abbey Road</h5>
+                            <p class="date">September 26, 1969</p>
+                            <p class="text">Abbey Road is the eleventh studio album by the English rock band the Beatles, released on 26 September 1969 by Apple Records.</p>
+                            <img src="public/img/Abbey Road.jpg" alt="" class="content-list__img">
+                            <a href="#modal-dvd">Buy</a>
+                            <p class="price">14.00$</p>
+                        </li>
+                        <li class="content-list__item">
+                            <h5 class="title title--small">Let It Be</h5>
+                            <p class="date">May 8, 1970</p>
+                            <p class="text">Let It Be is the twelfth and final studio album by the English rock band the Beatles. It was released on 8 May 1970, almost a month after the group's break-up, in tandem with the motion picture of the same name.</p>
+                            <img src="public/img/Let It Be.jpg" alt="" class="content-list__img">
+                            <a href="#modal-dvd">Buy</a>
+                            <p class="price">10.00$</p>
+                        </li>
+                        <li class="content-list__item">
+                            <h5 class="title title--small">Help</h5>
+                            <p class="date">6 August 1965</p>
+                            <p class="text">Help! is the fifth studio album by the English rock band the Beatles and the soundtrack to their film of the same name. It was released on 6 August 1965. Seven of the fourteen songs, including the singles "Help!" and "Ticket to Ride", appeared in the film and took up the first side of the vinyl album.</p>
+                            <img src="public/img/Help.jpg" alt="" class="content-list__img">
+                            <a href="#modal-dvd">Buy</a>
+                            <p class="price">13.00$</p>
+                        </li>
+                        <li class="content-list__item">
+                            <h5 class="title title--small">Sgt. Pepper's Lonely Hearts Club Band</h5>
+                            <p class="date">May 26, 1967</p>
+                            <p class="text">Sgt. Pepper's Lonely Hearts Club Band is the eighth studio album by the English rock band the Beatles. Released on 26 May 1967, it spent 27 weeks at number one on the Record Retailer chart in the United Kingdom and 15 weeks at number one on the Billboard Top LPs chart in the United States.</p>
+                            <img src="public/img/Sgt. Pepper's Lonely Hearts Club Band.jpg" alt="" class="content-list__img">
+                            <a href="#modal-dvd">Buy</a>
+                            <p class="price">19.00$</p>
+                        </li>
+                        <li class="content-list__item">
+                            <h5 class="title title--small">DVD's Name</h5>
+                            <p class="date">15/03/2000</p>
+                            <p class="text">DVD's Description</p>
+                            <img src="" alt="" class="content-list__img">
+                            <a href="#modal-dvd">Buy</a>
+                            <p class="price">19.00$</p>
+                        </li>
+                    </ul>
+                </div>
+                <div id="modal-dvd" class="modal-dialog">
+                    <div class="modal-body">
+                        <a href="#close" title="Close" class="close">X</a>
+                        <div class="modal-header">
+                            <h2 class="title"><i class="fas fa-compact-disc"></i> DVDs</h2>
+                        </div>
+                        <div class="modal-content">
+                            <label for="dvdQuantity"><i class="fas fa-money-bill"></i> Price</label>
+                            <input id="dvdQuantity" type="text" class="input" placeholder="How many ?">
+                            <label for="emailAdress"><i class="fas fa-address-card"></i> Send To</label>
+                            <input id="emailAdress" type="email" class="input" placeholder="Your Email">
+                            <button class="btn">SEND <i class="fas fa-check"></i></button>
+                            <p>Need <a href="#">help?</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="bg-white">
+                <div class="content-contact">
+                    <h3 class="title title--large">CONTACT</h3>
+                    <p class="description">
+                        Fan? Drop a note!
+                    </p>
+                    <div class="contact__body">
+                        <div class="contact-body__info">
+                            <h3 class="title title--small"><i class="fas fa-map-marker-alt"></i> Chicago, US</h3>
+                            <h3 class="title title--small"><i class="fas fa-phone-alt"></i> Phone: +00 151515</h3>
+                            <h3 class="title title--small"><i class="fas fa-envelope"></i> Email: mail@mail.com</h3>
+                        </div>
+                        <div class="contact-body__form">
+                            <form action="" class="contact-form">
+                                <div class="contact-body__input">
+                                    <input type="text" class="input" placeholder="Name">
+                                    <input type="text" class="input" placeholder="Email">
+                                    <input type="text" class="input" placeholder="Message">
+                                </div>
+                                <input type="submit" class="btn btn--black" value="SEND">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <img src="public/img/map.jpg" alt="" class="footer__img">
+            <div class="social-link">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest-square"></i>
+            </div>
+            <h5 class="title title--small">Design by Thiên Phú</h5>
+        </footer>
+    </div>
+    <script>
+        // list = document.getElementById('slide__content');
+        // list.addEventListener("click", function(){
+        //     alert('chao');
+        // });
+        let slideIndex = 0;
+        showSlide();
+        defaultLoop = setInterval(showSlide,3000);
+        function showSlide(distance = 1){
+            slideIndex += distance;
+            let slideList = document.getElementsByClassName('slide-item');
+            if (slideIndex > slideList.length)
+            {
+                slideIndex = 1;
+            }
+            if (slideIndex < 1)
+            {
+                slideIndex = slideList.length;
+            }
+            for (let i = 0; i < slideList.length; i++) {
+                slideList[i].style.display = "none";
+            }
+            slideList[slideIndex - 1].style.display = "block";
+        }
+        //you can custom
+        function switchSlide(n){
+            //reset loop
+            clearInterval(defaultLoop);
+            showSlide(n);
+            defaultLoop = setInterval(showSlide,3000);
+        }
+    </script>
+</body>
+</html>
